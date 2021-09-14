@@ -7,6 +7,8 @@
 #include <unistd.h>
 #endif
 
+#include "amongE.h"
+
 int main() {
 	int va;
 
@@ -18,6 +20,10 @@ int main() {
 		case 12:
 			//SOU EUUUUUUUUUU O TIRIRICA
 			printf("Meio gay, sus.\n");
+			sleep(1);
+			printf("SUS?????????\n");
+			sleep(1);
+			amongE();
 			break;
 		case -24:
 			printf("Gay inverso??\n");
