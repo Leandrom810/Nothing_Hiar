@@ -4,4 +4,6 @@
 
 **pee pee poo poo**
 
-PS: a divisória no java entre chad e soy é que o chad usa só text editor, o soy usa ide (sim, vale usar eclipse ou idea ;3)
+_nothing hiar nothing hiar_
+
+***feels gud man!!!***
