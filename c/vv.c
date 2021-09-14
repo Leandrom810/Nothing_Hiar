@@ -15,6 +15,10 @@ int main() {
 	scanf("%d", &va);
 
 	switch (va) {
+		case 12:
+			//SOU EUUUUUUUUUU O TIRIRICA
+			printf("Meio gay, sus.\n");
+			break;
 		case -24:
 			printf("Gay inverso??\n");
 			break;
@@ -33,5 +37,7 @@ int main() {
 		default:
 			printf("parabéns meu, tu é macho\n");
 	}
+	//gay
+	printf("O FLIGHT PASSOU POR AQUI!!!\n");
 	return 0;
 }
