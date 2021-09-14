@@ -6,6 +6,7 @@ namespace Vava
     {
         static void Main()
         {
+            //Eu quando o vava funciona :pray:
             Console.WriteLine("Vava.");
         }
     }
