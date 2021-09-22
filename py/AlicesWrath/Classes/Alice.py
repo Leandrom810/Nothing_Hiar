@@ -1,3 +1,10 @@
 class Pessoa:
-    nome = "Alice"
-    detalhe = "ODEIA OOP"
+    nome = ""
+    detalhe = ""
+
+    def __init__(self, nome, detalhe):
+        self.nome = nome
+        self.detalhe = detalhe
+
+    def printar(self):
+        return "PENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENISPENIS"
