@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if($_SESSION["signed"] == false){
+    header("Location: index.php?login=você precisa estar logado.",);
+  }
+
+?>
 <html>
   <head>
     <meta charset="utf-8" />

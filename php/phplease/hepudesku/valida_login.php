@@ -1,4 +1,7 @@
 <?php 
+     session_start();
+
+
     $users = array(
                                                         #gurasen é legitimo. Gura é filha do Forsen.
         array('email' => "forsen@baj.com", "password" => "gurasen"),
@@ -19,7 +22,9 @@
     }
     if($CHECK == false){
         header("Location: index.php?login=USER NOT FOUND FORSENCD");
+        $_SESSION["signed"] = false;
     } else{
+        $_SESSION["signed"] = true;
         header("Location: home.php");
     }
 
