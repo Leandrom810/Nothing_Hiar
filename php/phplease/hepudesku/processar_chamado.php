@@ -1,22 +1,14 @@
 <?php
-    session_start();
-    require("script/db.php");
+    $file = fopen("db/data.hd", "a");
 
-    
-    $ins = count($database) + 1;
-    array_push($database, array($_POST["title"], $_POST["select"], $_POST["desc"]));
-
-    for($y = 0; $y < count($database); $y++){
-        for($x = 0; $x < count($database[0]); $x++){
-            $_SESSION[$x][$y] =  $database[$y][$x];
-        }
-    }
-    for($y = 0; $y < count($database); $y++){
-        for($x = 0; $x < count($database[0]); $x++){
-            echo $_SESSION[$y][$x];
-        }
-        echo "<br>";
-    }
-    header("Location: testzone.php");
-
+    $content = $_POST["title"] . "#" . $_POST["select"] . "#" . $_POST["desc"] . PHP_EOL;
+    echo $content;
+    echo "<br>";
+    fwrite($file, $content);
+    /*$abc = explode("#", $content);
+    foreach ($abc as $a){
+        echo $a . "<br>";
+    }*/
+    fclose($file);
+    header("Location: abrir_chamado.php");
 ?>

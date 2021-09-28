@@ -17,7 +17,7 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a href="home.php" class="navbar-brand">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
@@ -51,7 +51,21 @@
 
                 </div>
               </div>
+              <?php
+                $file = fopen("db/data.hd", "r");
+                $conteudo =  explode(PHP_EOL,fread($file, 100000)); ?>
+                <?php foreach ($conteudo as $content){ 
+                  $piece = explode("#", $content); ?>
+                  <div class="card mb-3 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title"><?php echo $piece[0]; ?></h5>
+                  <h6 class="card-subtitle mb-2 text-muted"> <?php echo $piece[1]; ?></h6>
+                  <p class="card-text"> <?php echo $piece[2]; ?> </p>
 
+                </div>
+              </div>
+                <?php } ?>
+                <?php fclose($file); ?>
               <div class="row mt-5">
                 <div class="col-6">
                   <a href="home.php" class="btn btn-lg btn-warning btn-block" type="submit">Voltar</a>
