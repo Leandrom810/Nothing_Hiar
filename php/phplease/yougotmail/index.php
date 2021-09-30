@@ -21,7 +21,7 @@
       			<div class="col-md-12">
   				
 					<div class="card-body font-weight-bold">
-						<form>
+						<form method="POST" action="beque.php">
 							<div class="form-group">
 								<label for="para">Para</label>
 								<input name="email" type="text" class="form-control" id="para" placeholder="ex: forsen@baj.com">
