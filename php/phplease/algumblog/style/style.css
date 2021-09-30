@@ -1,0 +1,14 @@
+.board{
+    margin-left: 3%;
+    background-color: snow;
+}
+.content{
+    padding: 2%;
+}
+.title{
+    font-size: 38px;
+}
+.text{
+    color: #222222;
+    background-color: #aaaaaa;
+}

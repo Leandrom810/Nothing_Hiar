@@ -31,27 +31,12 @@
 
     </nav>
     <br>
-        <br>
-        <br>
-        <div class="board">
-            <div class="content">
-                <div class="title">
-                    titulo
-                </div>
-                <div class="text">
-                    texto
-                </div>
-            </div>
-            <div class="content">
-                <div class="title">
-                    titulo
-                </div>
-                <div class="text">
-                    texto
-                </div>
-            </div>
-        </div>
-        
+    <br>
+    <br>
+    <h1>NOTHING HIAR...</h1>
+    <hr>
+    <h3>WE ARE READY FOR MY SUMMER CAR!!! FEELS GUD MAN!</h3>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/script.js"></script>

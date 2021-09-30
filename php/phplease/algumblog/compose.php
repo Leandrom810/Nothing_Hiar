@@ -31,27 +31,18 @@
 
     </nav>
     <br>
-        <br>
-        <br>
-        <div class="board">
-            <div class="content">
-                <div class="title">
-                    titulo
-                </div>
-                <div class="text">
-                    texto
-                </div>
-            </div>
-            <div class="content">
-                <div class="title">
-                    titulo
-                </div>
-                <div class="text">
-                    texto
-                </div>
-            </div>
+    <br>
+    <br>
+    <form method="POST" action="process.php">
+        <div id="title-comp">
+        <input name="title" type="text" placeholder="Title">
         </div>
-        
+        <div id="text-comp">
+        <textarea name="content" cols="23" rows="5"></textarea>
+        </div>
+        <button class="btn btn-outline-primary" type="submit">Post On Blog</button>
+    </form>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
