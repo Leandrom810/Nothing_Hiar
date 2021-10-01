@@ -34,22 +34,21 @@
         <br>
         <br>
         <div class="board">
-            <div class="content">
-                <div class="title">
-                    titulo
-                </div>
-                <div class="text">
-                    texto
-                </div>
-            </div>
-            <div class="content">
-                <div class="title">
-                    titulo
-                </div>
-                <div class="text">
-                    texto
-                </div>
-            </div>
+            <?php
+                $file = fopen("data/data.db", "r");
+                $readed = fread($file, 1000000);
+                $collection = explode(PHP_EOL, $readed);
+                foreach ($collection as $line){
+                    $linesplit = explode("/", $line);?>
+                    <div class="content">
+                        <div class="title">
+                            <?php echo $linesplit[0]; ?>
+                        </div>
+                        <div class="text">
+                        <?php echo $linesplit[1]; ?>
+                        </div>
+                    </div>
+            <?php } fclose($file); ?>                
         </div>
         
 

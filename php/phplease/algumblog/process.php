@@ -1,6 +1,7 @@
 <?php
-    //nothing hiar!
-    echo "NOTHING HIAR!!! <br>";
-    echo "feelsGudMan phplease";
-    //print_r($_POST); omegaLUL
+    $file = fopen("data/data.db", "a");
+    $composition = $_POST["title"] . "/" . $_POST["content"] . PHP_EOL;
+    fwrite($file, $composition);
+    fclose($file);
+    header("Location: index.php");
 ?>
