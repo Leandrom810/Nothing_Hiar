@@ -1,0 +1,21 @@
+#mainframe{
+    background-color: azure;
+    margin: 10% 35%;
+    width: 500px;
+    max-height: 600px;
+    padding: 2px 2px;
+    justify-content: center;
+}
+
+#frame{
+    width: 80%;
+    margin: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #C3D3DF;
+    border-radius: 25;
+}
+
+.content{
+    margin-left: 20px;
+}
