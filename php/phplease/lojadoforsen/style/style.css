@@ -1,0 +1,24 @@
+#Lmenu{
+  background-color: whitesmoke;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+}
+.content{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.menu_text{
+  font-size: 28px;
+  color: gray;
+  text-decoration: none;
+}
+
+#contato{
+  text-align: center;
+  padding: 25% 44%;
+}
+.eu{
+  padding: 10% 30%;
+}
