@@ -12,8 +12,22 @@
 <body>
     <div id="mainframe">
         <div id="frame">
-            <div class="content">aaaaa</div>
-            <div class="content">aaaaa</div>
+            <?php
+                $file = fopen("data/lista.db", "r");
+                $content = explode(PHP_EOL, fread($file, 100000));
+                foreach ($content as $line){?>
+                    <div class="content">
+                        <?php echo $line; ?>
+                    </div>
+               <?php }
+                fclose($file);
+               ?>
+               <form  method="POST" action="process.php">
+                   <div id="but" class="form-group">
+                   <input class="form-control" name="texto" type="text" placeholder="escreva algo :)">
+                   </div>
+                   <button class="btn btn-success" type="submit">+</button>
+               </form>
         </div>
 
     </div>

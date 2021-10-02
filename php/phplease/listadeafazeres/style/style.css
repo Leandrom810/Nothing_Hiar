@@ -1,3 +1,7 @@
+html body{
+    background-color: #727272;
+}
+
 #mainframe{
     background-color: azure;
     margin: 10% 35%;
@@ -5,6 +9,7 @@
     max-height: 600px;
     padding: 2px 2px;
     justify-content: center;
+    border-radius: 5px;
 }
 
 #frame{
@@ -13,9 +18,16 @@
     margin-top: 2%;
     margin-bottom: 2%;
     background-color: #C3D3DF;
-    border-radius: 25;
+    border-radius: 10px;
 }
 
 .content{
     margin-left: 20px;
+    color:#6db1ad;
+}
+#but{
+    margin-left: 5px;
+    margin-bottom: 3px;
+    width: 350px;
+    display:inline-block;
 }
