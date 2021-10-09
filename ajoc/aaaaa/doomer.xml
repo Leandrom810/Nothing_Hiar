@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<china>
+    <human id="1">
+        <nome>Leandro</nome>
+        <genero>Homem</genero>
+        <sexualidade>???</sexualidade>
+        <gosto>gato</gosto>
+        <gosto>gato2</gosto>
+        <hobbies>
+            <hobby>Não tem</hobby>
+            <hobby>Algo</hobby>
+            <hobby>ver gachimuchi</hobby>
+        </hobbies>
+        <homem check="sim">based</homem>
+    </human>
+    <human id="2">
+        <nome>Wall</nome>
+        <genero>Concrete</genero>
+        <sexualidade>wall</sexualidade>
+        <gosto>oxygen</gosto>
+        <gosto>more walls</gosto>
+        <hobbies>
+            <hobby>exist</hobby>
+            <hobby>exists</hobby>
+            <hobby>get crushed</hobby>
+        </hobbies>
+        <homem check="no">sad</homem>
+    </human>
+</china>
