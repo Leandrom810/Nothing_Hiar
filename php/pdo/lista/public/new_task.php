@@ -18,6 +18,12 @@
 				</a>
 			</div>
 		</nav>
+		<?php
+			if($_GET['insert'] && $_GET['insert'] == 1){?>
+				<div class="bg-success pt=2 text-white d-flex justify-content-center">
+					<h5>Task inserter with success</h5>
+				</div>
+			<?php } ?>
 
 		<div class="container app">
 			<div class="row">

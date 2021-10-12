@@ -9,7 +9,9 @@
         }
         public function insert(){
             $query = 'INSERT INTO tasktable(task) values(:task)';
-            
+            $preparation = $this->connection->prepare($query);
+            $preparation->bindValue(':task', $this->task->__get('task'));
+            $preparation->execute();
         }
 
         public function request(){
