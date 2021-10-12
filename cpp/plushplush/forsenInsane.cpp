@@ -22,8 +22,9 @@ public:
 };
 
 int main(int argc, char const *argv[]) {
+  Any teste;
   Any a("gay");
   a.Leandro();
-  std::cout << "gachiGASM gachiGASM gachiGASM";
+  std::cout << "gachiGASM gachiGASM gachiGASM\n";
   return 0;
 }
