@@ -1,3 +1,12 @@
+<?php
+	$action = 'recover';
+	require 'scheduler/task_controller.php';
+	echo '<pre>';
+		print_r($tasks);
+	echo '<\pre>';
+
+?>
+
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -35,7 +44,16 @@
 							<div class="col">
 								<h4>Todas tarefas</h4>
 								<hr />
-
+								<? foreach($tasks as $index => $task){ ?>
+									<div class="row mb-3 d-flex align-items-center tarefa">
+									<div class="col-sm-9"><?= $task->task ?> (<?php if($task->id_status == 1){echo "Pendente";} else {echo "Concluído.";} ?>)</div>
+									<div class="col-sm-3 mt-2 d-flex justify-content-between">
+										<i class="fas fa-trash-alt fa-lg text-danger"></i>
+										<i class="fas fa-edit fa-lg text-info"></i>
+										<i class="fas fa-check-square fa-lg text-success"></i>
+									</div>
+								</div>
+								<?}?>
 								<div class="row mb-3 d-flex align-items-center tarefa">
 									<div class="col-sm-9">Lavar o carro (status)</div>
 									<div class="col-sm-3 mt-2 d-flex justify-content-between">

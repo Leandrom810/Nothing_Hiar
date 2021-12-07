@@ -15,7 +15,10 @@
         }
 
         public function request(){
-
+            $query = 'SELECT id, id_status, task FROM TB_TASK';
+            $preparation = $this->connection->prepare($query);
+            $preparation->execute();
+            $preparation->fetchAll(PDO::FETCH_OBJ);
 
         }
 
