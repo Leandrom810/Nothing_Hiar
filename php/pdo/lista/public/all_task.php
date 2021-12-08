@@ -16,6 +16,9 @@
 		<link rel="stylesheet" href="css/estilo.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<script>
+			function remove
+		</script>
 	</head>
 
 	<body>
@@ -48,7 +51,7 @@
 									<div class="row mb-3 d-flex align-items-center tarefa">
 									<div class="col-sm-9"><?= $task->task ?> (<?php if($task->id_status == 1){echo "Pendente";} else {echo "Concluído.";} ?>)</div>
 									<div class="col-sm-3 mt-2 d-flex justify-content-between">
-										<i class="fas fa-trash-alt fa-lg text-danger"></i>
+										<i class="fas fa-trash-alt fa-lg text-danger" onclick="remove(<?= $task->id ?>"></i>
 										<i class="fas fa-edit fa-lg text-info"></i>
 										<i class="fas fa-check-square fa-lg text-success"></i>
 									</div>
@@ -57,14 +60,14 @@
 								<div class="row mb-3 d-flex align-items-center tarefa">
 									<div class="col-sm-9">Lavar o carro (status)</div>
 									<div class="col-sm-3 mt-2 d-flex justify-content-between">
-										<i class="fas fa-trash-alt fa-lg text-danger"></i>
+										<i class="fas fa-trash-alt fa-lg text-danger" ></i>
 										<i class="fas fa-edit fa-lg text-info"></i>
 										<i class="fas fa-check-square fa-lg text-success"></i>
 									</div>
 								</div>
 
 								<div class="row mb-3 d-flex align-items-center tarefa">
-									<div class="col-sm-9">Passear com o cachorro (status)</div>
+									<div class="col-sm-9">Passear com o doggos (status)</div>
 									<div class="col-sm-3 mt-2 d-flex justify-content-between">
 										<i class="fas fa-trash-alt fa-lg text-danger"></i>
 										<i class="fas fa-edit fa-lg text-info"></i>
