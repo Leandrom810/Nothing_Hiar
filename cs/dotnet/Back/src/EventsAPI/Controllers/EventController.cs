@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using EventsAPI.Models;
+using EventsAPI.Data;
 
 namespace EventsAPI.Controllers
 {
@@ -13,7 +14,7 @@ namespace EventsAPI.Controllers
     public class EventsController : ControllerBase
     {
         
-        public IEnumerable<Event> _event = new Event[]{
+        /*public IEnumerable<Event> _event = new Event[]{
                     new Event(){
                     EventID = 1,
                     EventTheme = "INDIA",
@@ -32,21 +33,22 @@ namespace EventsAPI.Controllers
                     EventDate = DateTime.Now.AddDays(4).ToString("dd/MM/yyyy"),
                     ImageURL = "url://image1"
                     }
-        };
-        public EventsController()
+        };*/
+        private readonly DataContext _context;
+        public EventsController(DataContext context)
         {
-           
+           _context = context;
         }
 
         [HttpGet]
         
         public IEnumerable<Event> Get(){
-            return _event;
+            return _context.Events;
         }
 
         [HttpGet("{id}")]
-        public IEnumerable<Event> Get(int id){
-            return _event.Where(x => x.EventID == id);
+        public Event Get(int id){
+            return _context.Events.FirstOrDefault(x => x.EventID == id);
         }
 
         [HttpPost]
