@@ -1,4 +1,18 @@
+#import psycopg2 NÃO FUNCIONA OAKFDAODSKFGSPDAOK
 from bottle import route, run, request
+
+DSN = 'dbname=email_sender user=postgres host=db'
+SQL = 'INSERT INTO emails (title, message) VALUES (%s, %s)'
+
+def register_message(title, message):
+    connection = psycopg2.connect(DSN)
+    cursor = connection.cursor()
+    cursor.execute(SQL, (title, message))
+    connection.commit()
+    cursor.close()
+    connection.close()
+    print("Message Registered.")
+
 
 @route('/', method='POST')
 def send():
