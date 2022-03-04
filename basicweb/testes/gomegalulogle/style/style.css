@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font: arial 12px;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1#logo{
+    width:269px;
+    height: 120px;
+    background:url('../img/Google-Logo-1998-1999-650x366.png') top left no-repeat;
+    background-size: 100%;
+    text-indent: -999px;
+    margin: 0 auto;
+}
+
+#container{
+    width: 580px;
+    margin: 80px auto 0;
+    text-align: center;
+
+}
+input[type="search"]{
+    width: 566px;
+    padding: 7px;
+    display: block;
+    margin: 25px 0 0 18px;
+    font-size: 16px;
+}
+input[type="search"]:hover{
+    border-color: #aaa;
+
+}
+input[type="submit"]{
+    background-color: #ccc;
+    columns: #777;
+    border: solid 1px #aaa;
+    font-size:11px;
+    font-family: arial, sans-serif, monospace;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: dodgerblue;
+}
+
+
+nav#header{
+    text-align: right;
+    padding: 20px;
+}
+
+nav#header ul li{
+    display: inline;
+
+}
+
+nav#header ul li a:link,
+nav#header ul li a:visited,
+footer nav ul li a:link,
+footer nav ul li a:visited{
+    color: #555;
+    padding: 10px;
+
+}
+
+
+
+nav#header ul li a:hover
+footer nav ul li a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background: #eee;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav{
+    padding: 20px;
+}
+
+footer nav ul{
+    float:left;
+}
+
+footer nav ul li{
+    display: inline;
+    
+}
+footer nav ul#right{
+    float:right;
+    text-align: right;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear:both;
+}
