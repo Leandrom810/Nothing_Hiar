@@ -1,4 +1,4 @@
-package java.chad;
+package chad;
 
 
 public class chad{
