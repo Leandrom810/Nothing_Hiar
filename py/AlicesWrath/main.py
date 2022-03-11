@@ -31,3 +31,5 @@ turtle.write("COPY AND PASTE THIS 5 TIMES OR HE WILL COME FOR YOU monkaOMEGA", F
 
 
 screen.exitonclick()
+
+# Emiliano wtf is this?
