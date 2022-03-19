@@ -31,7 +31,10 @@ function readFile(pathvar){
 }
 
 function readFiles(varpath){
-    return Promise.all(varpath.map(path=> readFile(path)))
+    return Promise.all(varpath.map(path=> readFile(path)));
+}
+function removeIfEmpty(array){
+    return array.filter(val=>val.trim());
 }
 
 function endWith(array, varwith){
@@ -53,6 +56,7 @@ module.exports = {
     readDir,
     endWith,
     readFile,
-    readFiles
+    readFiles,
+    removeIfEmpty
 }
 
