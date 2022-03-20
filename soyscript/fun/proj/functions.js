@@ -53,7 +53,17 @@ function removeIfNumber(array){
     });
 }
 
-
+function removeSymbols(symbols){
+    return function(array){
+        return array.map(value => {
+            let newtext = value
+            symbols.forEach(symbol=>{
+                newtext = newtext.split(symbol).join('');
+            });
+            return newtext
+        });
+    }
+}
 
 
 
@@ -67,6 +77,7 @@ module.exports = {
     readFiles,
     removeIfEmpty,
     removeIfHas,
-    removeIfNumber
+    removeIfNumber,
+    removeSymbols
 }
 

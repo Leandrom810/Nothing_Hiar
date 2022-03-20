@@ -4,6 +4,10 @@ const path = require('path');
 
 const dirpath = path.join(__dirname, 'data', 'sub');
 
+const symbols = [
+    '.', '?', '!', '-', ',', '"', '_', '<i>', '</i', '\r', '[', ']', '(', ')'
+];
+
 mF.readDir(dirpath).then(files => 
     mF.endWith(files, ".srt"))
     .then(fileSRT=>mF.readFiles(fileSRT))
@@ -12,5 +16,6 @@ mF.readDir(dirpath).then(files =>
     .then(mF.removeIfEmpty)
     .then(line=>mF.removeIfHas(line, '-->'))
     .then(mF.removeIfNumber)
+    .then(line=> mF.removeSymbols(symbols)(line))
     .then(console.log);
 
