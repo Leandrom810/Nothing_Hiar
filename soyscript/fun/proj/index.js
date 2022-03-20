@@ -9,6 +9,8 @@ mF.readDir(dirpath).then(files =>
     .then(fileSRT=>mF.readFiles(fileSRT))
     .then(content=>content.join('\n'))
     .then(allcontent=>allcontent.split('\n'))
-    .then(lines=>mF.removeIfEmpty(lines))
+    .then(mF.removeIfEmpty)
+    .then(line=>mF.removeIfHas(line, '-->'))
+    .then(mF.removeIfNumber)
     .then(console.log);
 
