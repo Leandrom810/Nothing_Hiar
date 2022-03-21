@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import operator from './scripts/mathFuncs'
 
 function App() {
+  const REACT = "React"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>kkkkkk cadê?</h2>
+      <p>SUMIU KKKKKKKKKK</p>
+      <h1>Olá {REACT}</h1>
+      <hr></hr>
+      <p>sum 2 + 2 = {operator.sum(2,2)}</p>
+      <br></br>
+      <p>{logo}</p>
     </div>
   );
 }
