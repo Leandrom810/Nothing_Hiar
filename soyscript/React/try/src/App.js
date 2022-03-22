@@ -1,18 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import operator from './scripts/mathFuncs'
+import { sum } from './components/functions.js';
 
 function App() {
-  const REACT = "React"
   return (
     <div className="App">
-      <h2>kkkkkk cadê?</h2>
-      <p>SUMIU KKKKKKKKKK</p>
-      <h1>Olá {REACT}</h1>
-      <hr></hr>
-      <p>sum 2 + 2 = {operator.sum(2,2)}</p>
-      <br></br>
-      <p>{logo}</p>
+      <h1>Olá React!</h1>
+      <p>Soma de 2+2 = {sum(2, 2)}</p>
     </div>
   );
 }
