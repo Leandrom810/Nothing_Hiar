@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 const mF = require("../src/components/functions.js")
 
 //versão otimizada de elemento único!
-const element = React.createElement(
-  "h1",
-  {className:"greeting"},
-  "Greetings Mr.Freeman!"
-);
+// const element = React.createElement(
+//   "h1",
+//   {className:"greeting"},
+//   "Greetings Mr.Freeman!"
+// );
 
 //ESSE EXEMPLO NÃO É INSERIDO POIS O REACT É INTELIGENTE O BASTANTE PARA NÃO INSERIR MEDIANTE A POSSIBILIDADE DE CAUSAR BUGS!! :D
 // const element = React.createElement(
@@ -29,6 +29,8 @@ const element = React.createElement(
 // );
 
 
+const element1 = <mF.Test name="Gordon Freeman" />;
+
 ReactDOM.render(
   // <React.StrictMode>
   //   <App />
@@ -37,7 +39,7 @@ ReactDOM.render(
   // element,
   // document.getElementById('root')
   // setInterval(mF.clock, 1000)
-  mF.test("Gordon Freeman"),
+  element1,
   document.getElementById("root")
 
 );

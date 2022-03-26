@@ -12,13 +12,13 @@ function clock(){
     ReactDOM.render(element, document.getElementById("root"));
 }
 
-function test(prop){
-        return <h1>Hello {prop}</h1>;
+function Test(prop){
+        return <h1>Hello {prop.name}</h1>;
 
 }
 
 export{
     sum,
     clock,
-    test
+    Test
 }
