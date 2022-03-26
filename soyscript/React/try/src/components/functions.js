@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM, { render } from "react-dom";
 const sum = (a, b)=>a+b;
 
 function clock(){
@@ -12,7 +12,13 @@ function clock(){
     ReactDOM.render(element, document.getElementById("root"));
 }
 
+function test(prop){
+        return <h1>Hello {prop}</h1>;
+
+}
+
 export{
     sum,
-    clock
+    clock,
+    test
 }

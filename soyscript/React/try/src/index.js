@@ -36,7 +36,9 @@ ReactDOM.render(
   // <h1>Olá mundo!</h1>,
   // element,
   // document.getElementById('root')
-  setInterval(mF.clock, 1000)
+  // setInterval(mF.clock, 1000)
+  mF.test("Gordon Freeman"),
+  document.getElementById("root")
 
 );
 
