@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-const mF = require("../src/components/functions.js")
+const mF = require("./functions.js")
 
 //versão otimizada de elemento único!
 // const element = React.createElement(
@@ -29,17 +29,17 @@ const mF = require("../src/components/functions.js")
 // );
 
 
-const element1 = <mF.Test name="Gordon Freeman" />;
+// const element1 = <mF.Test name="Gordon Freeman" />;
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   // <h1>Olá mundo!</h1>,
   // element,
   // document.getElementById('root')
   // setInterval(mF.clock, 1000)
-  element1,
+  // element1,
   document.getElementById("root")
 
 );
