@@ -1,8 +1,8 @@
-function Test2(){
+function Test2(user){
     return(
-        <div>
-            <p>Hello Gordon Freeman</p>
-        </div>
+        <>
+            <p>Hello {user.name}.</p>
+        </>
     );
 }
 
