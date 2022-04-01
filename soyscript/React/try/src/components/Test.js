@@ -6,9 +6,10 @@ function Test(){
             <h1>
                 test component
             </h1>
-            <Test2 name="Gordon Freeman"/>
+            <Test2 message={"Hello."} name="Gordon Freeman" id={20}/>
         </div>
     );
 }
+
 
 export default Test;
