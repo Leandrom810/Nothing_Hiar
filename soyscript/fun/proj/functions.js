@@ -45,7 +45,6 @@ function endWith(array, varwith){
 function removeIfHas(array, pattern){
     return array.filter(value => !value.includes(pattern));
 }
-
 function removeIfNumber(array){
     return array.filter(value => {
         const numcheck = parseInt(value);
@@ -66,10 +65,21 @@ function removeSymbols(symbols){
 }
 
 
-
+function compose(...funcs){
+    return function(value){
+        return funcs.reduce(async (inc, fun)=>{
+            if(Promise.resolve(inc) === inc){
+                return fun(await inc)
+            } else{
+                return fun(inc);
+            }
+        })
+    }
+    }
 
 
 module.exports = {
+    compose,
     test,
     readDir,
     endWith,
