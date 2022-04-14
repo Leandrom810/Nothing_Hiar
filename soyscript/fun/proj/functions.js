@@ -34,27 +34,27 @@ function readFile(pathvar){
 function readFiles(varpath){
     return Promise.all(varpath.map(path=> readFile(path)));
 }
-function removeIfEmpty(array){
-    return array.filter(val=>val.trim());
+function removeIfEmpty(collection){
+    return collection.filter(val=>val.trim());
 }
 
-function endWith(array, varwith){
-    return array.filter(element => element.endsWith(varwith));
+function endWith(collection, varwith){
+    return collection.filter(element => element.endsWith(varwith));
 }
 
-function removeIfHas(array, pattern){
-    return array.filter(value => !value.includes(pattern));
+function removeIfHas(collection, pattern){
+    return collection.filter(value => !value.includes(pattern));
 }
-function removeIfNumber(array){
-    return array.filter(value => {
+function removeIfNumber(collection){
+    return collection.filter(value => {
         const numcheck = parseInt(value);
         return !(numcheck != 0 && !!numcheck)
     });
 }
 
 function removeSymbols(symbols){
-    return function(array){
-        return array.map(value => {
+    return function(collection){
+        return collection.map(value => {
             let newtext = value
             symbols.forEach(symbol=>{
                 newtext = newtext.split(symbol).join('');
