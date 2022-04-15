@@ -49,20 +49,6 @@
     <footer>
         <span>
             Bisky&copy;
-            <?php
-                include("php/db.php");
-                include("php/query.php");
-                $result = mysqli_query($conn, $selectquery);
-                if(mysqli_num_rows($result) > 0){
-                while($row = mysqli_fetch_assoc($result)){
-                echo $row["id"]. " ". $row["title"] . " " . $row["content"] . "<br>" . $row["data"] . "<br>";
-
-                }
-            } else {
-            echo "Não há dados ainda meu caro.";
-            }
-            mysqli_close($conn);
-            ?>
         </span>
     </footer>
     <script src="script/index.js"></script>

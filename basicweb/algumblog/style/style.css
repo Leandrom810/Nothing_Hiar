@@ -55,3 +55,33 @@ nav div.mynav a{
     clear: both;
     display: table;
 }
+
+form{
+    justify-content: center;
+
+}
+form input{
+    width: 70%;
+    height: 40px;
+    font-size: 40px;
+    font-family: monospace;
+}
+form textarea{
+    width: 80%;
+}
+form button{
+    width: 15%;
+    height: 44px;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: #5C68AE;
+    border-color: #485394;
+    box-shadow: #485394;
+
+
+}
+
+.post{
+    justify-content: end;
+    font-size: 20px;
+}
